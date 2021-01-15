@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public Transform player;
+    public Transform[] roamPoints;
     public float movespeed = 6f;
     public float RoamSpeed = 6f;
+    public float StartWaitTime;
 
     private enum State
     {
@@ -14,7 +16,8 @@ public class EnemyAI : MonoBehaviour
         ChaseTarget,
     }
 
-    private Vector2 RandomPos;
+    private float WaitTime;
+    private int RandomPos;
     private Vector2 StartPos;
     private Vector2 RoamPos;
     private Vector2 movement;
@@ -36,9 +39,9 @@ public class EnemyAI : MonoBehaviour
 
     //Chassing the player AI:
     void Start()
-    {    
+    {
         //RoamPos = Roaming();
-
+        RandomPos = Random.Range(0, roamPoints.Length);
         rb = GetComponent<Rigidbody2D>();
         StartPos = transform.position;
     }
@@ -65,7 +68,7 @@ public class EnemyAI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ChaseTarget(movement);
+        //ChaseTarget(movement);
         Roam();
     }
     void ChaseTarget(Vector2 direction)
@@ -76,15 +79,26 @@ public class EnemyAI : MonoBehaviour
     void Roam()
     {
         rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
+        transform.position = Vector2.MoveTowards(transform.position, roamPoints[RandomPos].position, RoamSpeed * Time.deltaTime);
+
+        float Range = 50f;
+        if (Vector2.Distance(transform.position, roamPoints[RandomPos].position) < 0.2f)
+        {
+            if (WaitTime <= 0)
+            {
+                RandomPos = Random.Range(0, roamPoints.Length);
+                WaitTime = StartWaitTime;
+            }
+            else
+            {
+                WaitTime -= Time.deltaTime;
+            }
+        }
     }
 
     private void TargetFound()
     {
-        float Range = 50f;
-        if (Vector2.Distance(transform.position, player.position) < Range)
-        {
-            state = State.ChaseTarget;
-        }
+      
     }
 
 
