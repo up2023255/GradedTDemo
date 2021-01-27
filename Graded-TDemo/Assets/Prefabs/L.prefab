@@ -1707,6 +1707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Opening: 0
 --- !u!1 &7910782847155129591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2099,7 @@ GameObject:
   - component: {fileID: 8729611090834335690}
   m_Layer: 0
   m_Name: L
-  m_TagString: Untagged
+  m_TagString: Rooms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

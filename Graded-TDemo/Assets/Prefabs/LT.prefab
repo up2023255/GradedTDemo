@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 495537825207640433}
   m_Layer: 0
   m_Name: LT
-  m_TagString: Untagged
+  m_TagString: Rooms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Opening: 0
 --- !u!1 &2180565824461521614
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +825,7 @@ GameObject:
   - component: {fileID: 2697228265233235992}
   - component: {fileID: 9150004362606074588}
   m_Layer: 0
-  m_Name: SpawnPoint (1)
+  m_Name: 'SpawnPoint '
   m_TagString: SpawnPoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -903,6 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Opening: 0
 --- !u!1 &2787507288108660841
 GameObject:
   m_ObjectHideFlags: 0
