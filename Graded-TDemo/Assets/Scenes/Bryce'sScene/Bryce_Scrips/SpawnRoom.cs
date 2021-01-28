@@ -26,7 +26,7 @@ private
         {
             if (Opening == 1)
             {
-                //A room with bottom door spawnsx
+                //A room with bottom door spawns
                 rand = Random.Range(0, templates.BottomRoom.Length);
                 Instantiate(templates.BottomRoom[rand], transform.position, templates.BottomRoom[rand].transform.rotation);
             }
@@ -56,9 +56,12 @@ private
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("SpawnPoint") && other.GetComponent<SpawnRoom>().Isthere == true)
+        if(other.GetComponent<SpawnRoom>().Isthere == false && Isthere == false)
         {
+            Instantiate(templates.ClosedRoom, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+
+        Isthere = true;
     }
 }
