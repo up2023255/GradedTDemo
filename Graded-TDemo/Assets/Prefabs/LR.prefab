@@ -1485,6 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6938606881227232805}
+  - component: {fileID: 8849139643533380839}
   m_Layer: 0
   m_Name: LR
   m_TagString: Untagged
@@ -1540,6 +1541,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8849139643533380839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105224500985833086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8e1c8a11ac6504c818c6294bedc2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4357810143496594139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Opening: 3
+  Opening: 4
 --- !u!61 &5982654190527702282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2662,7 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Opening: 4
+  Opening: 3
 --- !u!61 &572301801702070584
 BoxCollider2D:
   m_ObjectHideFlags: 0

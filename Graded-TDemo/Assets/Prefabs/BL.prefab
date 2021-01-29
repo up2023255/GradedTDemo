@@ -355,7 +355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309203015084798728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9999995, y: 0, z: 0}
+  m_LocalPosition: {x: -4.9999995, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6946830660531052586}
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2da760770e7d448f34325ae36d0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Opening: 3
+  Opening: 4
 --- !u!61 &2737866002533215001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -530,7 +530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352904689094912216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -4.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6946830660531052586}
@@ -2573,6 +2573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946830660531052586}
+  - component: {fileID: -7390301393483626135}
   m_Layer: 0
   m_Name: BL
   m_TagString: Rooms
@@ -2628,6 +2629,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7390301393483626135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946830660531052587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8e1c8a11ac6504c818c6294bedc2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6946830661545256038
 GameObject:
   m_ObjectHideFlags: 0

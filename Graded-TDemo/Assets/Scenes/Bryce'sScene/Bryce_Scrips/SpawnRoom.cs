@@ -6,6 +6,7 @@ public class SpawnRoom : MonoBehaviour
 {
 public
     int Opening;
+    float waittime = 4f;
 
 private
       int rand;
@@ -14,6 +15,7 @@ private
 
     private void Start()
     {
+        Destroy(gameObject, waittime);
         // Sets template to the list of rooms declared in "RoomTemplates"
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         Invoke("Spawn", 0.1f);
@@ -61,7 +63,6 @@ private
             Instantiate(templates.ClosedRoom, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-
         Isthere = true;
     }
 }
