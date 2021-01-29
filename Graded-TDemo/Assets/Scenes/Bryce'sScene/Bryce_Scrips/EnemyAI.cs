@@ -4,46 +4,42 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform player;
-    public Transform[] roamPoints;
-    public float movespeed = 6f;
+    [Header("Roaming")]
     public float RoamSpeed = 6f;
+    public Transform[] roamPoints;
     public float StartWaitTime;
-
-    private enum State
-    {
-        Roam,
-        ChaseTarget,
-    }
-
     private float WaitTime;
+
+    [Header("Shooting")]
+    public float fireRate = 1f;
+    private float Firecountdown = 0f;
+    public GameObject projectile;
+
+    [Header("Chasing")]
+    public float movespeed = 6f;
+    private Vector2 movement;
+    public Transform player;
+    public float stoppingDistance;
+    public float tooClose;
+
+    [Header("General")]
     private int RandomPos;
     private Vector2 StartPos;
     private Vector2 RoamPos;
-    private Vector2 movement;
-    private State state;
     private Rigidbody2D rb;
 
     public static Vector2 RanDirection()
     {
         return new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
     }
-    //private Vector2 Roaming()
-    //{
-    //    return StartPos + RanDirection() * Random.Range(10f, 50f);
-    //}
-    private void Awake()
-    {
-        state = State.Roam;
-    }
 
-    //Chassing the player AI:
     void Start()
     {
         //RoamPos = Roaming();
         RandomPos = Random.Range(0, roamPoints.Length);
         rb = GetComponent<Rigidbody2D>();
         StartPos = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
     private void Update()
     {
@@ -52,30 +48,36 @@ public class EnemyAI : MonoBehaviour
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
-        //switch (state)
-        //{
-        //    default:
-        //    case State.Roam:
-        //        rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
-        //        break;
-        //    case State.ChaseTarget:
-
-        //        rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
-        //        break;
-
-        //}
+   
     }
 
     private void FixedUpdate()
     {
-        //ChaseTarget(movement);
-        Roam();
+        ChaseTarget(movement);
+        //Roam();
+        Shoot();
     }
+    //Chassing the player AI:
     void ChaseTarget(Vector2 direction)
     {
-        rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
+        if(Vector2.Distance(transform.position,player.position) > stoppingDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, movespeed * Time.deltaTime);
+            //transform.Rotate(180f, 0f, 0f);
+        }
+        else if (Vector2.Distance(transform.position, player.position) > stoppingDistance && Vector2.Distance(transform.position, player.position) > tooClose)
+        {
+            transform.position = this.transform.position;
+        }
+        else if(Vector2.Distance(transform.position, player.position) > tooClose)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, -movespeed * Time.deltaTime);
+           //transform.Rotate(180f, 0f, 0f);
+        }
+
     }
-    //Roaming - Kinda Wack at the moment 
+
+    //Roaming - Kinda Wack at the moment: 
     void Roam()
     {
         rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
@@ -96,10 +98,45 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void TargetFound()
+    //Shooting at player:
+    void Shoot()
     {
-      
+        if(Firecountdown <= 0)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            Firecountdown = 1f / fireRate;
+        }
+        else
+        {
+            Firecountdown -= Time.deltaTime;
+        }
     }
 
-
 }
+///Descared code not currently needed (maybe usefull later unknown):
+//switch (state)
+//{
+//    default:
+//    case State.Roam:
+//        rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
+//        break;
+//    case State.ChaseTarget:
+
+//        rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
+//        break;
+
+//}
+//private Vector2 Roaming()
+//{
+//    return StartPos + RanDirection() * Random.Range(10f, 50f);
+//}
+//private enum State
+//{
+//    Roam,
+//    ChaseTarget,
+//}
+//private void Awake()
+//{
+//    state = State.Roam;
+//}
+//private State state;
