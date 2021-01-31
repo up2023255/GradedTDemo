@@ -5,14 +5,24 @@ using UnityEngine;
     public class Chest : MonoBehaviour
     {
 
-    private GameObject chest;
-    bool sanity = Player.getSanity();
+    bool sanity;
+
+    void Start()
+    {
+        GameObject player = GameObject.Find("Player") as GameObject;
+        player.GetComponent <Player>();
+    }
 
         private void Update()
         {
+        sanity = Player.sane;
             if (sanity == false)
             {
-                this.chest.SetActive(false);
+                this.gameObject.SetActive(true);
             }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
         }
     }

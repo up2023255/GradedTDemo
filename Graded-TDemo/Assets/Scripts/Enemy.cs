@@ -19,14 +19,15 @@ public class Enemy : MonoBehaviour {
         StartPos = transform.position;
     }
 
-    void Attack()
+    /*void OnCollisionEnter2D()
     {
+        //knockback
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
         foreach(Collider2D player in hitPlayer)
         {
             player.GetComponent<Player>().TakeDamage(damage);
         }
-    }
+    }*/
 
     void OnDrawGizmosSelected()
     {

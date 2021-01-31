@@ -19,6 +19,20 @@ using UnityEngine;
             currentHealth = maxHealth;
         }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            sane = false;
+            Debug.Log(sane);
+        }
+        if (Input.GetMouseButtonDown(2))
+        {
+            sane = true;
+            Debug.Log(sane);
+        }
+    }
+
         public void TakeDamage(int damage)
         {
             currentHealth -= damage;
@@ -27,6 +41,7 @@ using UnityEngine;
             {
                 Die();
             }
+        sanityCheck();
         }
 
         void Die()
