@@ -28,11 +28,44 @@ public class EnemyAI : MonoBehaviour
     private Vector2 RoamPos;
     private Rigidbody2D rb;
 
+    [Header("LockOnToTarget")]
+    public float Range = 19f;
+    private Transform Target;
+    public Transform enemy_;
+    public float rotSpeed = 10f;
+
+    // Target Lock on 
+    void updateTarget()
+    {
+        GameObject[] _player = GameObject.FindGameObjectsWithTag("Player");
+        float shortestDis = Mathf.Infinity;
+        GameObject Nearest = null;
+
+        foreach (GameObject Player in _player)
+        {
+            float Distance = Vector2.Distance(transform.position, player.transform.position);
+
+            if( Distance < shortestDis)
+            {
+                shortestDis = Distance;
+                Nearest = Player;
+            }
+        }
+        if (Nearest != null && shortestDis <= Range)
+        {
+            Target = Nearest.transform;
+        }
+        else
+        {
+            Target = null;
+        }
+    }
+
+    // Generic code that is used in other areas and states of the enemy
     public static Vector2 RanDirection()
     {
         return new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
     }
-
     void Start()
     {
         //RoamPos = Roaming();
@@ -40,6 +73,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         StartPos = transform.position;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        InvokeRepeating("updateTarget", 0f, 0.5f);
     }
     private void Update()
     {
@@ -48,15 +82,26 @@ public class EnemyAI : MonoBehaviour
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
-   
+
+        // Direct's the enemy to face the palyer when in range
+        Vector3 _Direction = Target.position - transform.position;
+        Quaternion lookDirection = Quaternion.LookRotation(_Direction);
+        Vector3 rotate = Quaternion.Lerp(enemy_.rotation, lookDirection, Time.deltaTime * rotSpeed).eulerAngles;
+        enemy_.rotation = Quaternion.Euler (0f, 0f, rotate.z);
+
+        if (Target == null)
+            return;
     }
 
+
+    // Activation of each enemy state -- still need to switch state automatically // If statement or Switch case  may work unsure
     private void FixedUpdate()
     {
         ChaseTarget(movement);
         //Roam();
         Shoot();
     }
+
     //Chassing the player AI:
     void ChaseTarget(Vector2 direction)
     {
@@ -74,7 +119,6 @@ public class EnemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.position, -movespeed * Time.deltaTime);
            //transform.Rotate(180f, 0f, 0f);
         }
-
     }
 
     //Roaming - Kinda Wack at the moment: 
@@ -83,7 +127,7 @@ public class EnemyAI : MonoBehaviour
         rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
         transform.position = Vector2.MoveTowards(transform.position, roamPoints[RandomPos].position, RoamSpeed * Time.deltaTime);
 
-        float Range = 50f;
+        //float _Range = 50f;
         if (Vector2.Distance(transform.position, roamPoints[RandomPos].position) < 0.2f)
         {
             if (WaitTime <= 0)
