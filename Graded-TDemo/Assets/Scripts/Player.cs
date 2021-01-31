@@ -2,33 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+    public class Player : MonoBehaviour
+    {
 
-    public int maxHealth = 100;
+    public int maxHealth;
     public int currentHealth;
-    public bool sanity = true;
-
-    void Start()
+    public static bool sane;
+    Player()
     {
-        currentHealth = maxHealth;
+        maxHealth = 100;
+        sane = true;
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        if(currentHealth <= 25)
+        void Start()
         {
-            sanity = false;
+            currentHealth = maxHealth;
         }
 
-        if (currentHealth <= 0)
+        public void TakeDamage(int damage)
         {
-            Die();
+            currentHealth -= damage;
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
+
+        void Die()
+        {
+            Debug.Log("Dead");
+        }
+
+        public bool sanityCheck()
+    {
+        while (currentHealth <= 25)
+        {
+            sane = false;
+        }
+        return sane;
     }
 
-    void Die() {
-        Debug.Log("Dead");
+    public static bool getSanity()
+        {
+            return sane;
+        }
     }
-}

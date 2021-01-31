@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
-{
-
-    GameObject player = GameObject.Find("Payer");
-    Player thePlayer = player.GetComponent<Player>();
-
-    private void Update()
+    public class Chest : MonoBehaviour
     {
-        if (thePlayer.sanity == false)
+
+    private GameObject chest;
+    bool sanity = Player.getSanity();
+
+        private void Update()
         {
-            GetComponent<Renderer>().enabled = true;
+            if (sanity == false)
+            {
+                this.chest.SetActive(false);
+            }
         }
     }
-}
