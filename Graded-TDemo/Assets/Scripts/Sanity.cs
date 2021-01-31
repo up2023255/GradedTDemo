@@ -6,9 +6,11 @@ public class Sanity : MonoBehaviour
 {
 
     bool sanity;
+    private GameObject[] sanityEntities;
 
     void Start()
     {
+        sanityEntities = GameObject.FindGameObjectsWithTag("Insane");
         GameObject player = GameObject.Find("Player") as GameObject;
         player.GetComponent<Player>();
        
@@ -16,14 +18,13 @@ public class Sanity : MonoBehaviour
 
     void Update()
     {
-        GameObject[] sanityEntities = GameObject.FindGameObjectsWithTag("Insane");
+        
         sanity = Player.sane;
         if (sanity == false)
         {
             foreach (GameObject gameObject in sanityEntities)
             {
                 gameObject.SetActive(true);
-                Debug.Log("On");
             }
         }
         if(sanity == true)
@@ -31,7 +32,6 @@ public class Sanity : MonoBehaviour
             foreach (GameObject gameObject in sanityEntities)
             {
                 gameObject.SetActive(false);
-                Debug.Log("Off");
             }
         }
     }
