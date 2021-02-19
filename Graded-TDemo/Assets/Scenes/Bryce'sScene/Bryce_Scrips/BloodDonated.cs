@@ -13,11 +13,16 @@ public class BloodDonated : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Accesses the player script and links the health variable.
-        Blood = player.GetComponent<Player>().maxHealth;
+        Input.GetKeyDown(KeyCode.E);
+        {
+            //Accesses the player script and links the health variable.
+            Blood = player.GetComponent<Player>().maxHealth;
 
-        //Takes the saved data and displayes it on the screen for the player.
-        bloodText.text = PlayerPrefs.GetInt("Blood Donated").ToString() + Blood;
+        }
+
+                    //Takes the saved data and displayes it on the screen for the player.
+            bloodText.text = PlayerPrefs.GetInt("Blood Donated").ToString() + Blood;
+
         //bloodText.text = "Blood Donated: ";
     }
 
@@ -27,5 +32,11 @@ public class BloodDonated : MonoBehaviour
         //Takes the players current health/blood and stores it on the system to allow it to remain over many runs.
         PlayerPrefs.SetInt("Blood Donated", Blood);
 
+    }
+
+    public void Reset()
+    {
+        PlayerPrefs.DeleteKey("Blood Donatoion");
+        bloodText.text = "0";
     }
 }

@@ -8,6 +8,7 @@ using UnityEngine;
     public int maxHealth;
     public int currentHealth;
     public static bool sane;
+    public StatsScreen statScreen;
     Player()
     {
         maxHealth = 100;
@@ -47,6 +48,7 @@ using UnityEngine;
         void Die()
         {
             Debug.Log("Dead");
+            statScreen.Stats();
         }
 
         public bool sanityCheck()
