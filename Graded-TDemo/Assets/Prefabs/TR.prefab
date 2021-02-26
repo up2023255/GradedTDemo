@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3468474165865588942}
   - component: {fileID: 1106165047035681036}
+  - component: {fileID: 8318326575628253722}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -82,6 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8318326575628253722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85828824857359685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &258242975551266905
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6603061674229474404}
   - component: {fileID: 1907297748378293708}
+  - component: {fileID: 566874997334808440}
   m_Layer: 0
   m_Name: Wall (21)
   m_TagString: Untagged
@@ -164,6 +179,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &566874997334808440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258242975551266905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &856412385988449560
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8739715451557771001}
   - component: {fileID: 8060898880654440164}
+  - component: {fileID: 996469726230231683}
   m_Layer: 0
   m_Name: Wall (34)
   m_TagString: Untagged
@@ -246,6 +275,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &996469726230231683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856412385988449560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1089725991934582746
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9046613220341173265}
   - component: {fileID: 1027506882224903565}
+  - component: {fileID: 4828782737988512765}
   m_Layer: 0
   m_Name: Wall (10)
   m_TagString: Untagged
@@ -328,6 +371,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &4828782737988512765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089725991934582746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1206519975247751906
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3506759873796588987}
   - component: {fileID: 7907456325661987790}
+  - component: {fileID: 8805831144823520819}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Untagged
@@ -410,6 +467,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8805831144823520819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206519975247751906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1417939010463532887
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9007830273322692709}
   - component: {fileID: 719163088181831379}
+  - component: {fileID: 3622170525237235808}
   m_Layer: 0
   m_Name: Wall (3)
   m_TagString: Untagged
@@ -492,6 +563,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &3622170525237235808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417939010463532887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1525403906474728237
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6261196854994893741}
   - component: {fileID: 1968105074556054841}
+  - component: {fileID: 5924361133085804774}
   m_Layer: 0
   m_Name: Wall (23)
   m_TagString: Untagged
@@ -667,6 +752,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &5924361133085804774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2227563739521112031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2365825287835392844
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5598209518341801167}
   - component: {fileID: 9144781253980779635}
+  - component: {fileID: 8393903157415163363}
   m_Layer: 0
   m_Name: Wall (32)
   m_TagString: Untagged
@@ -749,6 +848,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8393903157415163363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2365825287835392844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2425435916159859649
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6044758909665600187}
   - component: {fileID: 5600330316313854981}
+  - component: {fileID: 7873926427662379124}
   m_Layer: 0
   m_Name: Wall (28)
   m_TagString: Untagged
@@ -831,6 +944,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &7873926427662379124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2425435916159859649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2517282359795177456
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841583579261611915}
   - component: {fileID: 3022997042466052178}
+  - component: {fileID: 5427814849148963496}
   m_Layer: 0
   m_Name: Wall (13)
   m_TagString: Untagged
@@ -913,6 +1040,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &5427814849148963496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517282359795177456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2874090214898057380
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +1063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7447088109443696299}
   - component: {fileID: 8048056734601245767}
+  - component: {fileID: 2399688018770353380}
   m_Layer: 0
   m_Name: Wall (20)
   m_TagString: Untagged
@@ -995,6 +1136,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2399688018770353380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2874090214898057380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2952673012160058774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7740723803938884218}
   - component: {fileID: 7363746451398992724}
+  - component: {fileID: 3331428402590186618}
   m_Layer: 0
   m_Name: Wall (16)
   m_TagString: Untagged
@@ -1077,6 +1232,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &3331428402590186618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952673012160058774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3016961885107102978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5492389761075338461}
   - component: {fileID: 2184547317753921355}
+  - component: {fileID: 5335175495942949377}
   m_Layer: 0
   m_Name: Wall (22)
   m_TagString: Untagged
@@ -1159,6 +1328,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &5335175495942949377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016961885107102978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3502527993935615543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3034534494702575547}
   - component: {fileID: 8957520793496069475}
+  - component: {fileID: 3676330261996418599}
   m_Layer: 0
   m_Name: Wall (15)
   m_TagString: Untagged
@@ -1241,6 +1424,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &3676330261996418599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3502527993935615543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3943000297365458993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2334606724077617599}
   - component: {fileID: 5359741860478802550}
+  - component: {fileID: 7710891378617507846}
   m_Layer: 0
   m_Name: Wall (31)
   m_TagString: Untagged
@@ -1323,6 +1520,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &7710891378617507846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3943000297365458993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4321230703315119330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4547322850390029046}
   - component: {fileID: 6035919578677636742}
+  - component: {fileID: 1695986133926680256}
   m_Layer: 0
   m_Name: Wall (33)
   m_TagString: Untagged
@@ -1405,6 +1616,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1695986133926680256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4321230703315119330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4392909816715827350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3348292814492186687}
   - component: {fileID: 2968200987469721162}
+  - component: {fileID: 8286741941647870704}
   m_Layer: 0
   m_Name: Wall (7)
   m_TagString: Untagged
@@ -1487,6 +1712,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8286741941647870704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392909816715827350}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4501206542186997232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8366232497213757694}
   - component: {fileID: 5570852794655891109}
+  - component: {fileID: 4821542044405962991}
   m_Layer: 0
   m_Name: Wall (25)
   m_TagString: Untagged
@@ -1569,6 +1808,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &4821542044405962991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501206542186997232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4644740507728011770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4971615830107766891}
   - component: {fileID: 5918059618380280145}
+  - component: {fileID: 1954085784885516177}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -1651,6 +1904,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1954085784885516177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644740507728011770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4858721499246822221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3566297972779546720}
   - component: {fileID: 6399656663253153512}
+  - component: {fileID: 8380129470430455757}
   m_Layer: 0
   m_Name: Wall (26)
   m_TagString: Untagged
@@ -1733,6 +2000,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8380129470430455757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4858721499246822221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5569221198202731513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +2023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939069739230792520}
   - component: {fileID: 5848109491159579767}
+  - component: {fileID: 3424387129105568765}
   m_Layer: 0
   m_Name: Wall (14)
   m_TagString: Untagged
@@ -1815,6 +2096,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &3424387129105568765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569221198202731513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5726514059130757380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +2119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8822723349124151926}
   - component: {fileID: 2501165188650759663}
+  - component: {fileID: 5230593939637182494}
   m_Layer: 0
   m_Name: Wall (6)
   m_TagString: Untagged
@@ -1897,6 +2192,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &5230593939637182494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5726514059130757380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5790972885859545659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +2215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4374338673864079760}
   - component: {fileID: 4886979052132923813}
+  - component: {fileID: 1034331631307388135}
   m_Layer: 0
   m_Name: Wall (27)
   m_TagString: Untagged
@@ -1979,6 +2288,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1034331631307388135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5790972885859545659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6386222508014222065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,6 +2404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3964202087915455686}
   - component: {fileID: 6327699752691246503}
+  - component: {fileID: 1012052082956454037}
   m_Layer: 0
   m_Name: Wall (4)
   m_TagString: Untagged
@@ -2154,6 +2477,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1012052082956454037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496196802868365355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6765552159707675094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,6 +2500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2565243424715735809}
   - component: {fileID: 5260537079914176613}
+  - component: {fileID: 1147956088805629264}
   m_Layer: 0
   m_Name: Wall (19)
   m_TagString: Untagged
@@ -2236,6 +2573,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1147956088805629264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6765552159707675094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7640622644507007417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,6 +2596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637672222343590977}
   - component: {fileID: 6541369732945768301}
+  - component: {fileID: 2464385983352752194}
   m_Layer: 0
   m_Name: Wall (9)
   m_TagString: Untagged
@@ -2318,6 +2669,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2464385983352752194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7640622644507007417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7936943368340150558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 664512607600086575}
   - component: {fileID: 6912001387561371089}
+  - component: {fileID: 8414394885298128313}
   m_Layer: 0
   m_Name: Wall (5)
   m_TagString: Untagged
@@ -2477,6 +2842,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8414394885298128313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940615901491016483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7973995833287264727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1666405128414367006}
   - component: {fileID: 512782994310881967}
+  - component: {fileID: 3261674951363729904}
   m_Layer: 0
   m_Name: Wall (24)
   m_TagString: Untagged
@@ -2559,6 +2938,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &3261674951363729904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973995833287264727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8211845484227140170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,6 +2961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2486021544951527957}
   - component: {fileID: 3591357114584485758}
+  - component: {fileID: 7428964027309922980}
   m_Layer: 0
   m_Name: Wall (29)
   m_TagString: Untagged
@@ -2641,6 +3034,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &7428964027309922980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211845484227140170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8383188695798953625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,6 +3057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483180374299160316}
   - component: {fileID: 4619827178316305587}
+  - component: {fileID: 6309469569543362684}
   m_Layer: 0
   m_Name: Wall (18)
   m_TagString: Untagged
@@ -2723,6 +3130,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &6309469569543362684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383188695798953625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8847883063875775714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +3153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038839648612843238}
   - component: {fileID: 289930004992249875}
+  - component: {fileID: 8053404411870596882}
   m_Layer: 0
   m_Name: Wall (8)
   m_TagString: Untagged
@@ -2805,6 +3226,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &8053404411870596882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847883063875775714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8870434738724510913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,6 +3249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3112640512139032281}
   - component: {fileID: 5499931403931365543}
+  - component: {fileID: 1077048904897722098}
   m_Layer: 0
   m_Name: Wall (35)
   m_TagString: Untagged
@@ -2887,3 +3322,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1077048904897722098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8870434738724510913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
