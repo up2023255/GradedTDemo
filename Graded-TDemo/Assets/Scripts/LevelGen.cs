@@ -18,7 +18,7 @@ public class LevelGen : MonoBehaviour
     List<walk> walks;
     float chwalkChangeDirection = 0.5f, chWalkSpawn = 0.05f;
     float chWalkDestroy = 0.05f;
-    int walksMax = 20;
+    int walksMax = 10;
     float fillPercent = 1.0f;
     public GameObject wall, floor;
 
