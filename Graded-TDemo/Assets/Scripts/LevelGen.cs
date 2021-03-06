@@ -7,8 +7,8 @@ public class LevelGen : MonoBehaviour
     enum gridSpace {empty, floor, wall};
     gridSpace[,] grid;
     int roomH, roomW;
-    Vector2 roomSizeWorldUnits = new Vector2(30, 30);
-    float worldUnitsInOneGridCell = 1;
+    Vector2 roomSizeWorldUnits = new Vector2(40, 40);
+    float worldUnitsInOneGridCell = 10;
     struct walk
     {
         public Vector2 direction;
@@ -16,10 +16,10 @@ public class LevelGen : MonoBehaviour
     }
 
     List<walk> walks;
-    float chwalkChangeDirection = 0.5f, chWalkSpawn = 0.05f;
+    float chwalkChangeDirection = 0.5f, chWalkSpawn = 1.0f;
     float chWalkDestroy = 0.05f;
-    int walksMax = 10;
-    float fillPercent = 1.0f;
+    int walksMax = 50;
+    float fillPercent = 0.5f;
     public GameObject wall, floor;
 
     void Start()
@@ -27,7 +27,6 @@ public class LevelGen : MonoBehaviour
         Setup();
         CreateFloor();
         CreateWalls();
-        RemoveSingleWalls();
         SpawnLevel();
     }
 
@@ -79,9 +78,9 @@ public class LevelGen : MonoBehaviour
         //Grid creation
         grid = new gridSpace[roomW, roomH];
         //Default grid set
-        for (int x = 0; x < roomW-1;x++)
+        for (int x = 0; x < roomW - 1; x++)
         {
-            for (int y = 0; y < roomH-1; y++)
+            for (int y = 0; y < roomH - 1; y++)
             {
                 //Every cell made empty
                 grid[x, y] = gridSpace.empty;
@@ -161,8 +160,8 @@ public class LevelGen : MonoBehaviour
             {
                 walk Theywalk = walks[j];
                 //Adds a clamp/limit on the space they have
-                Theywalk.position.x = Mathf.Clamp(Theywalk.position.x, 1, roomW-2);
-                Theywalk.position.y = Mathf.Clamp(Theywalk.position.y, 1, roomH-2);
+                Theywalk.position.x = Mathf.Clamp(Theywalk.position.x, 1, roomW - 2);
+                Theywalk.position.y = Mathf.Clamp(Theywalk.position.y, 1, roomH - 2);
                 walks[j] = Theywalk;
             }
 
@@ -177,19 +176,19 @@ public class LevelGen : MonoBehaviour
     void CreateWalls()
     {
         //Loop through every grid space
-        for (int x = 0; x < roomW-1; x++)
+        for (int x = 0; x < roomW - 1; x++)
         {
-            for (int y = 0; y < roomH-1; y++)
+            for (int y = 0; y < roomH - 1; y++)
             {
                 //Checks to see if floor is there and works around it
                 if (grid[x,y] == gridSpace.floor)
                 {
                     //if space around = empty place wall
-                    if (grid[x,y+1] == gridSpace.empty)
+                    if (grid[x,y + 1] == gridSpace.empty)
                     {
                         grid[x, y + 1] = gridSpace.wall;
                     }
-                    if (grid[x, y-1] == gridSpace.empty)
+                    if (grid[x, y - 1] == gridSpace.empty)
                     {
                         grid[x, y - 1] = gridSpace.wall;
                     }
@@ -197,18 +196,13 @@ public class LevelGen : MonoBehaviour
                     {
                         grid[x + 1, y] = gridSpace.wall;
                     }
-                    if (grid[x-1, y] == gridSpace.empty)
+                    if (grid[x - 1, y] == gridSpace.empty)
                     {
                         grid[x - 1, y] = gridSpace.wall;
                     }
                 }
             }
         }
-    }
-
-    void RemoveSingleWalls()
-    {
-
     }
 
     void SpawnLevel()
