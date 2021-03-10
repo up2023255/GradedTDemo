@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5731966496675133939}
   - component: {fileID: 5731966496675133938}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Temp Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,70 +4,33 @@ using UnityEngine;
 
 public class LevelGen : MonoBehaviour
 {
-    enum gridSpace {empty, floor, wall};
+    enum gridSpace { empty, floor, wall, enemies, player};
     gridSpace[,] grid;
     int roomH, roomW;
-    Vector2 roomSizeWorldUnits = new Vector2(40, 40);
-    float worldUnitsInOneGridCell = 10;
-    struct walk
+    Vector2 roomSizeWorldUnits = new Vector2(50, 50);
+    float worldUnitsInOneGridCell = 1;
+    struct map
     {
         public Vector2 direction;
         public Vector2 position;
     }
-
-    List<walk> walks;
-    float chwalkChangeDirection = 0.5f, chWalkSpawn = 1.0f;
+    List<map> mappers;
+    float chwalkChangeDirection = 0.5f, chWalkSpawn = 5.0f;
     float chWalkDestroy = 0.05f;
-    int walksMax = 50;
+    int mappersMax = 50;
     float fillPercent = 0.5f;
-    public GameObject wall, floor;
+    public GameObject Wall, Floor, Player;
+    public GameObject[] Enemys;
+
 
     void Start()
     {
         Setup();
         CreateFloor();
         CreateWalls();
+        EnemySpawnPos();
+        PlayerSpawn();
         SpawnLevel();
-    }
-
-    Vector2 RandomDirection()
-    {
-        //Random int Picked form 0-3
-        int chose = Mathf.FloorToInt(Random.value * 3.99f);
-        //chose a direction
-        switch (chose)
-        {
-            case 0:
-                return Vector2.down;
-            case 1:
-                return Vector2.left;
-            case 2:
-                return Vector2.up;
-            default:
-                return Vector2.right;
-        }
-    }
-
-    int FloorNumber()
-    {
-        int num = 0;
-        foreach (gridSpace space in grid)
-        {
-            if (space == gridSpace.floor)
-            {
-                num++;
-            }
-        }
-        return num;
-    }
-
-    void Spawn(float x, float y, GameObject Obj)
-    {
-        // position 
-        Vector2 offset = roomSizeWorldUnits / 2.0f;
-        Vector2 pos = new Vector2(x, y) * worldUnitsInOneGridCell - offset;
-        //Object spawn
-        Instantiate(Obj, pos, Quaternion.identity);
     }
 
     void Setup()
@@ -76,27 +39,27 @@ public class LevelGen : MonoBehaviour
         roomH = Mathf.RoundToInt(roomSizeWorldUnits.x / worldUnitsInOneGridCell);
         roomW = Mathf.RoundToInt(roomSizeWorldUnits.y / worldUnitsInOneGridCell);
         //Grid creation
-        grid = new gridSpace[roomW, roomH];
+        grid = new gridSpace[roomW,roomH];
         //Default grid set
-        for (int x = 0; x < roomW - 1; x++)
+        for (int x = 0; x < roomW-1; x++)
         {
-            for (int y = 0; y < roomH - 1; y++)
+            for (int y = 0; y < roomH-1; y++)
             {
                 //Every cell made empty
                 grid[x, y] = gridSpace.empty;
             }
         }
         //First walk set
-        walks = new List<walk>();
+        mappers = new List<map>();
         //walk created 
-        walk newWalk = new walk();
-        newWalk.direction = RandomDirection();
+        map newmap = new map();
+        newmap.direction = RandomDirection();
         //Grid center found
-        Vector2 spawnPosition = new Vector2(Mathf.RoundToInt(roomW / 2.0f), Mathf.RoundToInt(roomH / 2.0f));
-        newWalk.position = spawnPosition;
+        Vector2 spawnPosition = new Vector2(Mathf.RoundToInt(roomW / 2.0f), 
+                                             Mathf.RoundToInt(roomH / 2.0f));
+        newmap.position = spawnPosition;
         //Walk added to list
-        walks.Add(newWalk);
-
+        mappers.Add(newmap);
     }
 
     void CreateFloor()
@@ -105,64 +68,64 @@ public class LevelGen : MonoBehaviour
         do
         {
             //Floor creation 
-            foreach (walk mywalk in walks)
+            foreach (map mymap in mappers)
             {
-                grid[(int)mywalk.position.x,(int)mywalk.position.y] = gridSpace.floor;
+                grid[(int)mymap.position.x,(int)mymap.position.y] = gridSpace.floor;
             }
 
             //Destroy walk : chance
-            int checksNumber = walks.Count;
+            int checksNumber = mappers.Count;
             for (int j = 0; j < checksNumber; j++)
             {
                 //if its not the only one. and at a low chance
-                if (Random.value < chWalkDestroy && walks.Count > 1)
+                if (Random.value < chWalkDestroy && mappers.Count > 1)
                 {
-                    walks.RemoveAt(j);
+                    mappers.RemoveAt(j);
                     break; // Destroy one per loop
                 }
             }
 
             //Pick new direction
-            for (int j = 0; j < walks.Count; j++)
+            for (int j = 0; j < mappers.Count; j++)
             {
                 if (Random.value < chwalkChangeDirection)
                 {
-                    walk walkThis = walks[j];
+                    map walkThis = mappers[j];
                     walkThis.direction = RandomDirection();
-                    walks[j] = walkThis;
+                    mappers[j] = walkThis;
                 }
             }
 
             //Spawn new walk chance
-            checksNumber = walks.Count;
+            checksNumber = mappers.Count;
             for (int j = 0; j < checksNumber; j++)
             {
-                if (Random.value < chWalkSpawn && walks.Count < walksMax)
+                if (Random.value < chWalkSpawn && mappers.Count < mappersMax)
                 {
                     //walk creation
-                    walk newWalk = new walk();
+                    map newWalk = new map();
                     newWalk.direction = RandomDirection();
-                    newWalk.position = walks[j].position;
-                    walks.Add(newWalk);
+                    newWalk.position = mappers[j].position;
+                    mappers.Add(newWalk);
                 }
             }
 
             //walk movement 
-            for (int j = 0; j < walks.Count; j++)
+            for (int j = 0; j < mappers.Count; j++)
             {
-                walk walkThis = walks[j];
+                map walkThis = mappers[j];
                 walkThis.position += walkThis.direction;
-                walks[j] = walkThis;
+                mappers[j] = walkThis;
             }
 
             //Boarder avoided
-            for (int j = 0; j < walks.Count; j++)
+            for (int j =0; j < mappers.Count; j++)
             {
-                walk Theywalk = walks[j];
+                map Theywalk = mappers[j];
                 //Adds a clamp/limit on the space they have
-                Theywalk.position.x = Mathf.Clamp(Theywalk.position.x, 1, roomW - 2);
-                Theywalk.position.y = Mathf.Clamp(Theywalk.position.y, 1, roomH - 2);
-                walks[j] = Theywalk;
+                Theywalk.position.x = Mathf.Clamp(Theywalk.position.x, 1, roomW-2);
+                Theywalk.position.y = Mathf.Clamp(Theywalk.position.y, 1, roomH-2);
+                mappers[j] = Theywalk;
             }
 
             //ending the loop
@@ -170,6 +133,7 @@ public class LevelGen : MonoBehaviour
             {
                 break;
             }
+            loop++; 
         } while (loop < 10000);
     }
 
@@ -205,6 +169,15 @@ public class LevelGen : MonoBehaviour
         }
     }
 
+    void EnemySpawnPos()
+    { 
+
+    }
+
+    void PlayerSpawn()
+    {
+        Instantiate(Player);
+    }
     void SpawnLevel()
     {
         for (int x = 0; x < roomW; x++)
@@ -216,13 +189,57 @@ public class LevelGen : MonoBehaviour
                     case gridSpace.empty:
                         break;
                     case gridSpace.floor:
-                        Spawn(x,y,floor);
+                        Spawn(x,y,Floor);
                         break;
                     case gridSpace.wall:
-                        Spawn(x,y,wall);
+                        Spawn(x,y,Wall);
+                        break;
+                    case gridSpace.player:
+                        Spawn(x, y, Player);
                         break;
                 }
             }
         }
     }
+
+    int FloorNumber()
+    {
+        int num = 0;
+        foreach (gridSpace space in grid)
+        {
+            if (space == gridSpace.floor)
+            {
+                num++;
+            }
+        }
+        return num;
+    }
+
+    void Spawn(float x, float y, GameObject Obj)
+    {
+        // position 
+        Vector2 offset = roomSizeWorldUnits / 2.0f;
+        Vector2 pos = new Vector2(x, y) * worldUnitsInOneGridCell - offset;
+        //Object spawn
+        Instantiate(Obj, pos, Quaternion.identity);
+    }
+
+    Vector2 RandomDirection()
+    {
+        //Random int Picked form 0-3
+        int Choice = Mathf.FloorToInt(Random.value * 3.99f);
+        //chose a direction
+        switch (Choice)
+        {
+            case 0:
+                return Vector2.down;
+            case 1:
+                return Vector2.left;
+            case 2:
+                return Vector2.up;
+            default:
+                return Vector2.right;
+        }
+    }
+
 }
