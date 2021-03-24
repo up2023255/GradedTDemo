@@ -8,11 +8,6 @@ public class RoomTemplates : MonoBehaviour
        public GameObject[] BottomRoom;
        public GameObject[] LeftRoom;
        public GameObject[] RightRoom;
-       public GameObject CorridorTop;
-       public GameObject CorridorLeft;
-       public GameObject CorridorRight;
-       public GameObject CorridorBottom;
-
 
        public GameObject ClosedRoom;
 

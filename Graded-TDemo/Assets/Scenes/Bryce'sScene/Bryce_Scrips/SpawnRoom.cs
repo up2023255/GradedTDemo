@@ -49,33 +49,9 @@ private
                 // A room with right door spawns
                 rand = Random.Range(0, templates.RightRoom.Length);
                 Instantiate(templates.RightRoom[rand], transform.position, templates.RightRoom[rand].transform.rotation);
-
-            }
-            else if (Opening == 5)
-            {
-                // Spawn a top corridor 
-                Instantiate(templates.CorridorTop, transform.position, templates.CorridorTop.transform.rotation);
-            }
-            else if (Opening == 6)
-            {
-                // Spawn a bottom corridor 
-                Instantiate(templates.CorridorBottom, transform.position, templates.CorridorBottom.transform.rotation);
-            }
-            else if (Opening == 7)
-            {
-                // Spawn a left corridor 
-                Instantiate(templates.CorridorLeft, transform.position, templates.CorridorLeft.transform.rotation);
-
-            }
-            else if (Opening == 8)
-            {
-                // Spawn a Right corridor 
-                Instantiate(templates.CorridorRight, transform.position, templates.CorridorRight.transform.rotation);
-
             }
             Isthere = true;
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -16,95 +16,95 @@ public class MapSpriteSelector : MonoBehaviour
 
     SpriteRenderer rend;
 
-    void PickSprite()
-    {
-        if (up)
-        {
-            if (down)
-            {
-                if (right)
-                {
-                    if (left)
-                    {
-                        rend.sprite = spUDRL;
-                    }
-                    else
-                    {
-                        rend.sprite = spDRU;
-                    }
-                }
-                else if (left)
-                {
-                    rend.sprite = spULD;
-                }
-                else
-                {
-                    rend.sprite = spUD;
-                }
-                else
-                {              
-                    if (right)
-                    {
-                        if (left)
-                        {
-                            rend.sprite = spRUL;
-                        }
-                        else
-                        {
-                            rend.sprite = spUR;
-                        }
-                    }
-                    else if (left)
-                    {
-                        rend.sprite = spUL;
-                    }
-                    else
-                    {
-                        rend.sprite = spU;
-                    }
-                }
-                return;
-            }
-        }   
-        if (down)
-        {
-            if (right)
-            {
-                if (left)
-                {
-                    rend.sprite = spLDR;
-                }
-                else
-                {
-                    rend.sprite = spDR;
-                }
-            }
-            else if (left)
-            {
-                rend.sprite = spDL;
-            }
-            else
-            {
-                rend.sprite = spD;
-            }
-            return;
-        }
-        if (right)
-        {
-            if (left)
-            {
-                rend.sprite = spRL;
-            }
-            else
-            {
-                rend.sprite = spR;
-            }
-        }
-        else
-        {
-            rend.sprite = spR;
-        }
-    }
+    //void PickSprite()
+    //{
+    //    if (up)
+    //    {
+    //        if (down)
+    //        {
+    //            if (right)
+    //            {
+    //                if (left)
+    //                {
+    //                    rend.sprite = spUDRL;
+    //                }
+    //                else
+    //                {
+    //                    rend.sprite = spDRU;
+    //                }
+    //            }
+    //            else if (left)
+    //            {
+    //                rend.sprite = spULD;
+    //            }
+    //            else
+    //            {
+    //                rend.sprite = spUD;
+    //            }
+    //            else
+    //            {              
+    //                if (right)
+    //                {
+    //                    if (left)
+    //                    {
+    //                        rend.sprite = spRUL;
+    //                    }
+    //                    else
+    //                    {
+    //                        rend.sprite = spUR;
+    //                    }
+    //                }
+    //                else if (left)
+    //                {
+    //                    rend.sprite = spUL;
+    //                }
+    //                else
+    //                {
+    //                    rend.sprite = spU;
+    //                }
+    //            }
+    //            return;
+    //        }
+    //    }   
+    //    if (down)
+    //    {
+    //        if (right)
+    //        {
+    //            if (left)
+    //            {
+    //                rend.sprite = spLDR;
+    //            }
+    //            else
+    //            {
+    //                rend.sprite = spDR;
+    //            }
+    //        }
+    //        else if (left)
+    //        {
+    //            rend.sprite = spDL;
+    //        }
+    //        else
+    //        {
+    //            rend.sprite = spD;
+    //        }
+    //        return;
+    //    }
+    //    if (right)
+    //    {
+    //        if (left)
+    //        {
+    //            rend.sprite = spRL;
+    //        }
+    //        else
+    //        {
+    //            rend.sprite = spR;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        rend.sprite = spR;
+    //    }
+    //}
 
     void PickColor()
     {
@@ -123,7 +123,7 @@ public class MapSpriteSelector : MonoBehaviour
     {
         rend = GetComponent<SpriteRenderer>();
         mainColor = normalColor;
-        PickSprite();
+        //PickSprite();
         PickColor();
     }
 
