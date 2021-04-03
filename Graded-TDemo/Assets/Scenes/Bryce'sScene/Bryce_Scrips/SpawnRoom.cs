@@ -59,7 +59,7 @@ private
         if(other.GetComponent<SpawnRoom>().Isthere == false && Isthere == false)
         {
             Instantiate(templates.ClosedRoom, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         Isthere = true;
     }

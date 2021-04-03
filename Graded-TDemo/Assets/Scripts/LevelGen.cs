@@ -20,7 +20,7 @@ public class LevelGen : MonoBehaviour
     int mappersMax = 50;
     float fillPercent = 0.5f;
     public GameObject Wall, Floor, Player;
-    public GameObject[] Enemys;
+    public GameObject Enemy;
 
 
     void Start()
@@ -196,6 +196,9 @@ public class LevelGen : MonoBehaviour
                         break;
                     case gridSpace.player:
                         Spawn(x, y, Player);
+                        break;
+                    case gridSpace.enemies:
+                        Spawn(x, y, Enemy);
                         break;
                 }
             }

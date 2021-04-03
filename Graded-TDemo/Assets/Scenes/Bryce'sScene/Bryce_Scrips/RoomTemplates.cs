@@ -8,6 +8,7 @@ public class RoomTemplates : MonoBehaviour
        public GameObject[] BottomRoom;
        public GameObject[] LeftRoom;
        public GameObject[] RightRoom;
+       
 
        public GameObject ClosedRoom;
 
@@ -16,6 +17,7 @@ public class RoomTemplates : MonoBehaviour
     public float waitTime;
     private bool BossSpawned;
     public GameObject boss;
+
 
     void update()
     {
@@ -35,4 +37,7 @@ public class RoomTemplates : MonoBehaviour
             waitTime -= Time.deltaTime;
         }
     }
+
+  
+
 }
