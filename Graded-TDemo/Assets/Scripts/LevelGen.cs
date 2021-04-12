@@ -6,7 +6,7 @@ public class LevelGen : MonoBehaviour
     enum gridSpace { empty, floor, wall, enemies, player};
     gridSpace[,] grid;
     int roomH, roomW;
-    Vector2 roomSizeWorldUnits = new Vector2(50, 50);
+    Vector2 roomSizeWorldUnits = new Vector2(100, 100);
     float worldUnitsInOneGridCell = 1;
     struct map
     {
@@ -19,7 +19,9 @@ public class LevelGen : MonoBehaviour
     int mappersMax = 50;
     float fillPercent = 0.5f;
     public GameObject Wall, Floor, Player;
-    public GameObject Enemy;
+    public GameObject[] EnemySpawners;
+    int rand;
+    int randPos;
 
 
     void Start()
@@ -27,9 +29,20 @@ public class LevelGen : MonoBehaviour
         Setup();
         CreateFloor();
         CreateWalls();
-        EnemySpawnPos();
+        //EnemySpawnPos();
         PlayerSpawn();
         SpawnLevel();
+    }
+    //void EnemySpawnPos()
+    //{
+    //    randPos = Random.Range(0, 100);
+    //    rand = Random.Range(0, EnemySpawners.Length);
+    //    Instantiate(EnemySpawners[rand], grid[randPos], Quaternion.identity);
+    //}
+
+    void PlayerSpawn()
+    {
+        Instantiate(Player);
     }
 
     void Setup()
@@ -168,15 +181,6 @@ public class LevelGen : MonoBehaviour
         }
     }
 
-    void EnemySpawnPos()
-    { 
-
-    }
-
-    void PlayerSpawn()
-    {
-        Instantiate(Player);
-    }
     void SpawnLevel()
     {
         for (int x = 0; x < roomW; x++)
@@ -195,9 +199,6 @@ public class LevelGen : MonoBehaviour
                         break;
                     case gridSpace.player:
                         Spawn(x, y, Player);
-                        break;
-                    case gridSpace.enemies:
-                        Spawn(x, y, Enemy);
                         break;
                 }
             }
