@@ -5,10 +5,10 @@ using UnityEngine;
     public class Player : MonoBehaviour
     {
 
-    public int maxHealth;
-    public int currentHealth;
-    public static bool sane;
-    public StatsScreen statScreen;
+        public int maxHealth;
+        public int currentHealth;
+        public static bool sane;
+        public StatsScreen statScreen;
     Player()
     {
         maxHealth = 100;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     public int MaxHealth = 100;
-    int currentHealth;
+    public int currentHealth;
     public Transform attackPoint;
     public float attackRange = 1.0f;
     public LayerMask playerLayer;
@@ -106,32 +106,32 @@ public class Enemy : MonoBehaviour {
     private void FixedUpdate()
     {
         //ChaseTarget(movement);
-        Roam();
+        //Roam();
     }
     void ChaseTarget(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
     }
     //Roaming - Kinda Wack at the moment 
-    void Roam()
-    {
-        rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
-        transform.position = Vector2.MoveTowards(transform.position, roamPoints[RandomPos].position, RoamSpeed * Time.deltaTime);
+    //void Roam()
+    //{
+    //    rb.MovePosition((Vector2)transform.position + (RanDirection() * RoamSpeed * Time.deltaTime));
+    //    transform.position = Vector2.MoveTowards(transform.position, roamPoints[RandomPos].position, RoamSpeed * Time.deltaTime);
 
-        float Range = 50f;
-        if (Vector2.Distance(transform.position, roamPoints[RandomPos].position) < 0.2f)
-        {
-            if (WaitTime <= 0)
-            {
-                RandomPos = Random.Range(0, roamPoints.Length);
-                WaitTime = StartWaitTime;
-            }
-            else
-            {
-                WaitTime -= Time.deltaTime;
-            }
-        }
-    }
+    //    float Range = 50f;
+    //    if (Vector2.Distance(transform.position, roamPoints[RandomPos].position) < 0.2f)
+    //    {
+    //        if (WaitTime <= 0)
+    //        {
+    //            RandomPos = Random.Range(0, roamPoints.Length);
+    //            WaitTime = StartWaitTime;
+    //        }
+    //        else
+    //        {
+    //            WaitTime -= Time.deltaTime;
+    //        }
+    //    }
+    //}
 
     private void TargetFound()
     {
