@@ -6,24 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/MainMenu.unity
+    path: Assets/Scenes/FINAL GAME SCENES/MainMenu.unity
     guid: 570e05de46df3274e843bfaaee698ad6
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Settings.unity
-    guid: 074840020f481d745867765ad58132c0
-  - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Level.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level.unity
     guid: 26a5ccd9b9515d345abb1fc6942ddda8
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Level 1.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level 1.unity
     guid: db49e6b37e76e044f870c82f38fce844
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Level 2.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level 2.unity
     guid: 2f549015b48b0cd499d27daf4206a4b9
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Level 3.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level 3.unity
     guid: 529b83702eb70c34ba8cca578682f08e
   - enabled: 1
-    path: Assets/Scenes/Final Game Scenes/Level 4.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level 4.unity
     guid: 19e7a0a2a4d8d0146b70117763083563
   m_configObjects: {}

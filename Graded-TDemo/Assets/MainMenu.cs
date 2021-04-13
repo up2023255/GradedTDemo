@@ -7,9 +7,14 @@ public class MainMenu : MonoBehaviour
 {
     public int levelGenerate;
     public GameObject settingsPanel;
+
+    List<string> scenes = new List<string>();
     public void StartGame()
     {
-        levelGenerate = Random.Range(2, 6);
+        //int rand = Random.Range(1, 6);
+        //SceneManager.LoadScene(scenes[rand]);
+
+        levelGenerate = Random.Range(1, 6);
         SceneManager.LoadScene(levelGenerate);
     }
 
