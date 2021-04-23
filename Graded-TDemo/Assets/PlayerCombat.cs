@@ -16,10 +16,20 @@ public class PlayerCombat : MonoBehaviour
     //Enemy define variables
     public LayerMask enemyLayers;
 
+    //Projectile Attack
+    public GameObject projectile;
+    public float minDMG;
+    public float maxDMG;
+    public float projectileForce;
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ShootAttack();
+        }
+
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             Attack();
@@ -39,6 +49,17 @@ public class PlayerCombat : MonoBehaviour
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDMG);
         }
+    }
+
+    private void ShootAttack()
+    {
+        GameObject spell = Instantiate(projectile, transform.position, Quaternion.identity);
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 myPos = transform.position;
+        Vector2 direction = (mousePos - myPos).normalized;
+        spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
+
+        
     }
 
     private void OnDrawGizmosSelected()
