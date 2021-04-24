@@ -52,13 +52,13 @@ using UnityEngine;
         }
 
         public bool sanityCheck()
-    {
-        while (currentHealth <= 25)
         {
-            sane = false;
+            while (currentHealth <= 25)
+                {
+                   sane = false;
+                }
+            return sane;
         }
-        return sane;
-    }
 
     public static bool getSanity()
         {
