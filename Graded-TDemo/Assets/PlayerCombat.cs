@@ -1,10 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+//using System;
 using UnityEngine;
+
 
 public class PlayerCombat : MonoBehaviour
 {
+    //Linking Enemy Script to Deal Damage
+    DamageEnemy DamageEnemy;
+
     //Animation variables 
     public Animator animator;
 
@@ -43,12 +45,23 @@ public class PlayerCombat : MonoBehaviour
      
      //Detect enemies in a range of attack
         Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers, enemyLayers);
-     
-     //Deal Damage
-        foreach (Collider2D enemy in enemyHit)
+
+        //Deal Damage
+         void OnTriggerEnter2D(Collider2D collision)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDMG);
+            if (collision.name != "Player")
+            {
+                if (collision.GetComponent<DamageEnemy>() != null)
+                {
+                    collision.GetComponent<DamageEnemy>().DealDamage(attackDMG);
+                }
+                Destroy(gameObject);
+            }
         }
+        //    foreach (Collider2D enemy in enemyHit)
+        //{
+        //    enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
+        //}
     }
 
     private void ShootAttack()
@@ -58,8 +71,7 @@ public class PlayerCombat : MonoBehaviour
         Vector2 myPos = transform.position;
         Vector2 direction = (mousePos - myPos).normalized;
         spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
-
-        
+        spell.GetComponent<InflictDamage>().DMG = Random.Range(minDMG, maxDMG);
     }
 
     private void OnDrawGizmosSelected()

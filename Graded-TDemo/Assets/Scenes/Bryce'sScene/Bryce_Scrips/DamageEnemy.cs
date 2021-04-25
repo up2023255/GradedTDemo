@@ -2,11 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DamageEnemy : MonoBehaviour
 {
     public float health;
     public float maxHealth;
+
+    //Healthbar
+    public GameObject healthBar;
+    public Slider healthBarSlider;
+
     void Start()
     {
         health = maxHealth;
@@ -16,6 +22,13 @@ public class DamageEnemy : MonoBehaviour
     {
         health -= damage;
         CheckDeath();
+        healthBarSlider.value = CalculateHealth();
+    }
+
+    public void HealCharacter (float heal)
+    {
+        health += heal;
+        CheckOverheal();
     }
 
     private void CheckOverheal()
@@ -32,4 +45,8 @@ public class DamageEnemy : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private float CalculateHealth()
+    {
+        return (health / maxHealth);
+    }
 }
