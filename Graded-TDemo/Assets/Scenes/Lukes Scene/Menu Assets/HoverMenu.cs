@@ -6,19 +6,16 @@ using TMPro;
 public class HoverMenu : MonoBehaviour
 {
     public Animator hoverAnim;
-
    
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-
-    }
     public void PlayAnim()
     {
-        hoverAnim.SetTrigger("Hover");
+        hoverAnim.SetBool("Hovering", true);
+        Debug.Log("ON");
+    }
+
+    public void StopAnim()
+    {
+        hoverAnim.SetBool("Hovering", false);
+        Debug.Log("OFF");
     }
 }
