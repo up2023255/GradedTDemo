@@ -47,21 +47,10 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers, enemyLayers);
 
         //Deal Damage
-         void OnTriggerEnter2D(Collider2D collision)
+        foreach (Collider2D enemy in enemyHit)
         {
-            if (collision.name != "Player")
-            {
-                if (collision.GetComponent<DamageEnemy>() != null)
-                {
-                    collision.GetComponent<DamageEnemy>().DealDamage(attackDMG);
-                }
-                Destroy(gameObject);
-            }
+            enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
         }
-        //    foreach (Collider2D enemy in enemyHit)
-        //{
-        //    enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
-        //}
     }
 
     private void ShootAttack()
