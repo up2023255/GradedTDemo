@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour
 {
     public float damage;
+    public float wait;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,8 +16,8 @@ public class EnemyProjectile : MonoBehaviour
             {
                 collision.GetComponent<Player>().TakeDamage((int) damage);
             }
-
             Destroy(gameObject);
         }
+        Destroy(gameObject, wait);
     }
 }
