@@ -5,16 +5,19 @@ using UnityEngine;
 public class InflictDamage : MonoBehaviour
 {
     public float DMG;
+    public float wait;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name != "Player")
+        if (collision.tag != "Player")
         {
             if (collision.GetComponent<DamageEnemy>() != null)
             {
                 collision.GetComponent<DamageEnemy>().DealDamage(DMG);
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+            //Destroy(gameObject, wait);
         }
+        Destroy(gameObject, wait);
     }
 }

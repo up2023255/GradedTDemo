@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     public GameObject projectile;
-    public Transform player;
+    private GameObject player;
     public float minDamage;
     public float maxDamage;
     public float force;
@@ -14,6 +14,7 @@ public class EnemyShooting : MonoBehaviour
     void Start()
     {
         StartCoroutine(ShootPlayer());
+        player = FindObjectOfType<Player>().gameObject;
     }
 
     IEnumerator ShootPlayer()
@@ -23,7 +24,7 @@ public class EnemyShooting : MonoBehaviour
         {
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
             Vector2 myPos = transform.position;
-            Vector2 targetPos = player.position;
+            Vector2 targetPos = player.transform.position;
             Vector2 direction = (targetPos - myPos).normalized;
             bullet.GetComponent<Rigidbody2D>().velocity = direction * force;
             bullet.GetComponent<EnemyProjectile>().damage = Random.Range(minDamage, maxDamage);
