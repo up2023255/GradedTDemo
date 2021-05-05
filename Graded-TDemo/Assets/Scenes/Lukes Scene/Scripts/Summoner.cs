@@ -7,28 +7,53 @@ public class Summoner : MonoBehaviour
     public GameObject skeletonPrefab;
 
     private Animator mainAnim;
-    private Animator subAnim;
+    private Rigidbody2D rb;
 
-    public Transform summonSpot;
+    bool hasTeleported;
+    private int dangerZone = 2;
+    private Transform Player;
 
-    // Start is called before the first frame update
     void Start()
     {
         mainAnim = this.GetComponent<Animator>();
-        subAnim = GetComponentInChildren<Animator>();
-        summonSpot = this.gameObject.transform.GetChild(0);
+        StartCoroutine(Summon());
+
+        rb = this.GetComponent<Rigidbody2D>();
+
+        GameObject player = GameObject.Find("Player");
+        Player = player.transform;
     }
 
-   
+
     void Update()
     {
-        InvokeRepeating("Summon", 3f, 3f);
+        if (Vector2.Distance(transform.position, Player.position) <= dangerZone && !hasTeleported)
+        {
+            StartCoroutine("Appear");
+        }
     }
 
     public IEnumerator Summon()
     {
-        subAnim.Play("Summon");
-        yield return new WaitForSeconds(0.5f);
-        Instantiate(skeletonPrefab, summonSpot, Quaternion.identity);
+        mainAnim.SetTrigger("Summon");
+        yield return new WaitForSeconds(1.5f);
+        Instantiate(skeletonPrefab, transform.position, Quaternion.identity);
+        Debug.Log("Summon");
+
+        yield return new WaitForSeconds(2f);
+        StartCoroutine("Summon");
+    }
+
+    public IEnumerator Appear()
+    {
+        hasTeleported = true;
+
+        mainAnim.Play("Disappear");
+        yield return new WaitForSeconds(1f);
+
+        mainAnim.SetTrigger("Appear");
+        transform.position = new Vector2(transform.position.x + 5, transform.position.y);
+        
+
     }
 }

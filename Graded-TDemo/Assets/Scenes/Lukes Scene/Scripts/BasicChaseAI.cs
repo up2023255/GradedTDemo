@@ -5,7 +5,7 @@ using UnityEngine;
 public class BasicChaseAI : MonoBehaviour
 {
     
-    public Transform Player;
+    private Transform Player;
     public int MoveSpeed = 10;
     public int MaxDist = 1;
     public int MinDist = 1;
@@ -19,6 +19,8 @@ public class BasicChaseAI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
+        GameObject player = GameObject.Find("Player");
+        Player = player.transform;
     }
 
     // Update is called once per frame
@@ -27,9 +29,6 @@ public class BasicChaseAI : MonoBehaviour
 
         // transform.LookAt(Player);
         
-
-
-
         if (Vector2.Distance(transform.position, Player.position) >= MinDist)
         {
 
