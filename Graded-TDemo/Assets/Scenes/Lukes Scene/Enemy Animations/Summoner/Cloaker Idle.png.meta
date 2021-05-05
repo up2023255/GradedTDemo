@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 204d98869e8ad204aa24dc3804e82381
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3801204694733428066
+    second: Cloaker Idle_0
+  - first:
+      213: 6217224668671293289
+    second: Cloaker Idle_1
+  - first:
+      213: -3323007910562666648
+    second: Cloaker Idle_2
+  - first:
+      213: -4975116398383581841
+    second: Cloaker Idle_3
+  - first:
+      213: 5950621716064891225
+    second: Cloaker Idle_4
+  - first:
+      213: -7985411682214995452
+    second: Cloaker Idle_5
+  - first:
+      213: 4097900697167687867
+    second: Cloaker Idle_6
+  - first:
+      213: 633341408413869815
+    second: Cloaker Idle_7
+  - first:
+      213: -4093111915925349760
+    second: Cloaker Idle_8
+  - first:
+      213: -6352874187018131392
+    second: Cloaker Idle_9
+  - first:
+      213: -5502146730347693977
+    second: Cloaker Idle_10
+  - first:
+      213: 8288828133694666359
+    second: Cloaker Idle_11
+  - first:
+      213: -7279647130118753050
+    second: Cloaker Idle_12
+  - first:
+      213: -1157487819076961213
+    second: Cloaker Idle_13
+  - first:
+      213: 5454603559253205262
+    second: Cloaker Idle_14
+  - first:
+      213: -4418173883356168214
+    second: Cloaker Idle_15
+  - first:
+      213: 4023848055555186682
+    second: Cloaker Idle_16
+  - first:
+      213: 8188558997267134920
+    second: Cloaker Idle_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cloaker Idle_0
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 3606
+        width: 437
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9aedd348786f3bc0800000000000000
+      internalID: -3801204694733428066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_1
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 3606
+        width: 436
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967b2f855e4084650800000000000000
+      internalID: 6217224668671293289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_2
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 3606
+        width: 445
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867691159ed42e1d0800000000000000
+      internalID: -3323007910562666648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_3
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2885
+        width: 437
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f653026bef5d4fab0800000000000000
+      internalID: -4975116398383581841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 2885
+        width: 436
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951f5ca4cead49250800000000000000
+      internalID: 5950621716064891225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_5
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 2885
+        width: 437
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a1250326e1e2190800000000000000
+      internalID: -7985411682214995452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2165
+        width: 437
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb07183f8faaed830800000000000000
+      internalID: 4097900697167687867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 2165
+        width: 437
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6ed06c7a41ac800800000000000000
+      internalID: 633341408413869815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_8
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 2165
+        width: 438
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ad95116685237c0800000000000000
+      internalID: -4093111915925349760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1446
+        width: 437
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048290cf59e06d7a0800000000000000
+      internalID: -6352874187018131392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1446
+        width: 445
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7687c8b43b274a3b0800000000000000
+      internalID: -5502146730347693977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 1446
+        width: 453
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77672218545d70370800000000000000
+      internalID: 8288828133694666359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_12
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 725
+        width: 462
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4741f118f79fa90800000000000000
+      internalID: -7279647130118753050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 725
+        width: 469
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c731016f6cfefe0800000000000000
+      internalID: -1157487819076961213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_14
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 725
+        width: 470
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e016ed39905a2bb40800000000000000
+      internalID: 5454603559253205262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 5
+        width: 462
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefb5a6f24e7fa2c0800000000000000
+      internalID: -4418173883356168214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 5
+        width: 453
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff538dbc7497d730800000000000000
+      internalID: 4023848055555186682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 5
+        width: 445
+        height: 694
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9bf6ee50b93a170800000000000000
+      internalID: 8188558997267134920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

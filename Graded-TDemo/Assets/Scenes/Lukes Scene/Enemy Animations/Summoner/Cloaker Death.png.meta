@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 6e148df8c3e6da941a81742cfb087c8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8358293452358942708
+    second: Cloaker Death_0
+  - first:
+      213: 471847879116560600
+    second: Cloaker Death_1
+  - first:
+      213: 1917509595501972808
+    second: Cloaker Death_2
+  - first:
+      213: -2619073201250224154
+    second: Cloaker Death_3
+  - first:
+      213: 8686116376652304469
+    second: Cloaker Death_4
+  - first:
+      213: 218320787250257015
+    second: Cloaker Death_5
+  - first:
+      213: -259191093430284688
+    second: Cloaker Death_6
+  - first:
+      213: -8820477364009074335
+    second: Cloaker Death_7
+  - first:
+      213: -703690115047028258
+    second: Cloaker Death_8
+  - first:
+      213: 2572224494565964472
+    second: Cloaker Death_9
+  - first:
+      213: -5672374629056578767
+    second: Cloaker Death_10
+  - first:
+      213: -6092287174604552454
+    second: Cloaker Death_11
+  - first:
+      213: -6265707121194277184
+    second: Cloaker Death_12
+  - first:
+      213: 7563353258032414278
+    second: Cloaker Death_13
+  - first:
+      213: -1728127473416486135
+    second: Cloaker Death_14
+  - first:
+      213: -2529854547482368203
+    second: Cloaker Death_15
+  - first:
+      213: -6258590124009892710
+    second: Cloaker Death_16
+  - first:
+      213: 6730894398986139078
+    second: Cloaker Death_17
+  - first:
+      213: -4500497612111906913
+    second: Cloaker Death_18
+  - first:
+      213: -4007619657791713031
+    second: Cloaker Death_19
+  - first:
+      213: 1379046036865898213
+    second: Cloaker Death_20
+  - first:
+      213: -8115723740832803422
+    second: Cloaker Death_21
+  - first:
+      213: 2500281214309213880
+    second: Cloaker Death_22
+  - first:
+      213: 6257166727865236767
+    second: Cloaker Death_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cloaker Death_0
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 3606
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c000ca3a360610c80800000000000000
+      internalID: -8358293452358942708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_1
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 3606
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d893c665275c8600800000000000000
+      internalID: 471847879116560600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_2
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 3606
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d4c4551dc5c9a10800000000000000
+      internalID: 1917509595501972808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_3
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 3606
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e73cb6ccce27abd0800000000000000
+      internalID: -2619073201250224154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_4
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2886
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5505014d2d84b8870800000000000000
+      internalID: 8686116376652304469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_5
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 2886
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c922b6991a70300800000000000000
+      internalID: 218320787250257015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_6
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 2886
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e8423e21b276cf0800000000000000
+      internalID: -259191093430284688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_7
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 2886
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1618dd0029e579580800000000000000
+      internalID: -8820477364009074335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_8
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2166
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed90ba4919dfb36f0800000000000000
+      internalID: -703690115047028258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_9
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 2166
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bab921bc8062b320800000000000000
+      internalID: 2572224494565964472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_10
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 2166
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bf422145da741b0800000000000000
+      internalID: -5672374629056578767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_11
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 2166
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af60700d719d37ba0800000000000000
+      internalID: -6092287174604552454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_12
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1446
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c66496029cbb09a0800000000000000
+      internalID: -6265707121194277184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_13
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1446
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eb0df37bd66f860800000000000000
+      internalID: 7563353258032414278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_14
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 1446
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903ca6c08357408e0800000000000000
+      internalID: -1728127473416486135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_15
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 1446
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53728eb51b624ecd0800000000000000
+      internalID: -2529854547482368203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_16
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 726
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a945f9f01750529a0800000000000000
+      internalID: -6258590124009892710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_17
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 726
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c53c384bc0f86d50800000000000000
+      internalID: 6730894398986139078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_18
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 726
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97739534450b81c0800000000000000
+      internalID: -4500497612111906913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_19
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 726
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0d37e87231268c0800000000000000
+      internalID: -4007619657791713031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 6
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e65d44601b532310800000000000000
+      internalID: 1379046036865898213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_21
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 6
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5d474b1482f5f80800000000000000
+      internalID: -8115723740832803422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_22
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 6
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6ab717488c2b220800000000000000
+      internalID: 2500281214309213880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloaker Death_23
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 6
+        width: 437
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dfcc2bcfbe5d650800000000000000
+      internalID: 6257166727865236767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
