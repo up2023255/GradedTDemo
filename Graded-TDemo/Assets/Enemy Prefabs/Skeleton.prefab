@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8003874373768227442}
   - component: {fileID: 8003874373768227449}
   - component: {fileID: 8003874373768227445}
+  - component: {fileID: 2146818006}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -143,7 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81185a97bfc52a64481f0ef4f3970c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   MoveSpeed: 2
   MaxDist: 2
   MinDist: 1
@@ -168,3 +168,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2146818006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8003874373768227448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59297df675eca04ca7cac546fdea9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100
+  healthBar: {fileID: 0}
+  healthBarSlider: {fileID: 0}
