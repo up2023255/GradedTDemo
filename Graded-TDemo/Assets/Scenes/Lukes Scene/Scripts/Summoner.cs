@@ -31,6 +31,15 @@ public class Summoner : MonoBehaviour
         {
             StartCoroutine("Appear");
         }
+
+        if (Player.position.x < transform.position.x)
+        {
+            transform.localEulerAngles = new Vector3(0, 180, 0);
+        }
+        if (Player.position.x > transform.position.x)
+        {
+            transform.localEulerAngles = new Vector3(0, 0, 0);
+        }
     }
 
     public IEnumerator Summon()

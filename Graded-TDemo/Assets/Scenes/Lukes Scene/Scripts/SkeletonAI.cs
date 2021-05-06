@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicChaseAI : MonoBehaviour
+public class SkeletonAI : MonoBehaviour
 {
     
     private Transform Player;
