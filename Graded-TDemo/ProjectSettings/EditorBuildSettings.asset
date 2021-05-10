@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FINAL GAME SCENES/Level.unity
     guid: 26a5ccd9b9515d345abb1fc6942ddda8
   - enabled: 1
-    path: Assets/Scenes/FINAL GAME SCENES/Level 1.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Level 1 - Not working currenlty-.unity
     guid: db49e6b37e76e044f870c82f38fce844
   - enabled: 1
     path: Assets/Scenes/FINAL GAME SCENES/Level 2.unity
@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FINAL GAME SCENES/Level 3.unity
     guid: 529b83702eb70c34ba8cca578682f08e
   - enabled: 1
-    path: Assets/Scenes/FINAL GAME SCENES/Level 4.unity
+    path: Assets/Scenes/FINAL GAME SCENES/Testing materials.unity
     guid: 19e7a0a2a4d8d0146b70117763083563
   m_configObjects: {}
