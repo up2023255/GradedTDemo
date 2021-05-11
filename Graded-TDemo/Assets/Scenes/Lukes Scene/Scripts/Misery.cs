@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Misery : MonoBehaviour
 {
     private Transform Player;
     public int MoveSpeed = 10;
@@ -28,7 +28,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
 
-        if (Vector2.Distance(transform.position, Player.position) >= MinDist && isSlamming)
+        if (Vector2.Distance(transform.position, Player.position) >= MinDist && !isSlamming)
         {
 
             transform.position = Vector2.MoveTowards(transform.position, Player.position, MoveSpeed * Time.deltaTime);
@@ -59,6 +59,6 @@ public class NewBehaviourScript : MonoBehaviour
         anim.SetBool("canAttack", true);
         yield return new WaitForSeconds(2f);
 
-        //isSlamming = true;
+        isSlamming = false;
     }
 }
