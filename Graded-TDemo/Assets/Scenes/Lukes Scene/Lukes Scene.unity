@@ -1180,7 +1180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1601842789
 Animator:
   serializedVersion: 3
@@ -1620,6 +1620,10 @@ PrefabInstance:
     - target: {fileID: 5285028306230733169, guid: e6a4558d1f1e53d49a5b22b9ae935278, type: 3}
       propertyPath: m_Name
       value: Misery
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285028306230733169, guid: e6a4558d1f1e53d49a5b22b9ae935278, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5285028306230733174, guid: e6a4558d1f1e53d49a5b22b9ae935278, type: 3}
       propertyPath: m_RootOrder
