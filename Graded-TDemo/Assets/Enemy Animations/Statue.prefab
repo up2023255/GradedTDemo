@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4059134417516717453}
   - component: {fileID: 4059134417516717452}
   - component: {fileID: 4059134417516717455}
+  - component: {fileID: 14969135703506860}
   m_Layer: 0
   m_Name: Statue
   m_TagString: Untagged
@@ -103,6 +104,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &14969135703506860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059134417516717454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66f3eb4996d30446abd9e4d635f11b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 2199871890960685240, guid: 43f018e101d362543b0f6b84aed6ead2, type: 3}
+  minDamage: 2
+  maxDamage: 5
+  force: 10
+  wait: 2
 --- !u!1 &8186563549146223717
 GameObject:
   m_ObjectHideFlags: 0

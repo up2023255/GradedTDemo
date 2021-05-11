@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 374
         y: 2198
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,9 +163,9 @@ TextureImporter:
       name: Statue Attacking_1
       rect:
         serializedVersion: 2
-        x: 1668
-        y: 2191
-        width: 518
+        x: 1655
+        y: 2198
+        width: 467
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -186,7 +186,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2933
         y: 2198
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -207,7 +207,7 @@ TextureImporter:
         serializedVersion: 2
         x: 374
         y: 1478
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,7 +228,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1655
         y: 1478
-        width: 518
+        width: 467
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -249,7 +249,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2933
         y: 1478
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,7 +270,7 @@ TextureImporter:
         serializedVersion: 2
         x: 374
         y: 758
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,7 +291,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1655
         y: 758
-        width: 518
+        width: 467
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: Statue Attacking_9
       rect:
         serializedVersion: 2
-        x: 2904
+        x: 2933
         y: 758
-        width: 518
-        height: 590
+        width: 469
+        height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,7 +333,7 @@ TextureImporter:
         serializedVersion: 2
         x: 374
         y: 38
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -352,9 +352,9 @@ TextureImporter:
       name: Statue Attacking_11
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 31
-        width: 518
+        x: 1655
+        y: 38
+        width: 467
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -375,7 +375,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2933
         y: 38
-        width: 518
+        width: 469
         height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
