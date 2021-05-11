@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4625192842532652539}
   - component: {fileID: 821025976280128475}
   - component: {fileID: 8946310614469675872}
-  - component: {fileID: 7898026098883734506}
+  - component: {fileID: 2465518558116904075}
+  - component: {fileID: -8811516774567172699}
   m_Layer: 0
   m_Name: projectile for enemys
   m_TagString: Untagged
@@ -109,20 +110,33 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5483176827169510472}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7898026098883734506
+--- !u!114 &2465518558116904075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483176827169510472}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4623e230f28aec1489dd7de132d0f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.005
+--- !u!114 &-8811516774567172699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,5 +148,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8b858909b38484c96ee016a460c711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5.8519564
+  damage: 10
   wait: 2
