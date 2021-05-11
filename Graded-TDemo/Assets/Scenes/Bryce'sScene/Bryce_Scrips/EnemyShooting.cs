@@ -5,30 +5,36 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     public GameObject projectile;
-    private GameObject player;
+    public Transform player;
     public float minDamage;
     public float maxDamage;
     public float force;
-    public float wait;
+    private float wait;
 
-    void Start()
+    void Update()
     {
-        StartCoroutine(ShootPlayer());
-        player = FindObjectOfType<Player>().gameObject;
+        ShootPlayer();
     }
 
-    IEnumerator ShootPlayer()
+    void ShootPlayer()
     {
-        yield return new WaitForSeconds(wait);
-        if (player != null)
-        {
+      if (Time.time > wait)
+      {
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
-            Vector2 myPos = transform.position;
-            Vector2 targetPos = player.transform.position;
-            Vector2 direction = (targetPos - myPos).normalized;
-            bullet.GetComponent<Rigidbody2D>().velocity = direction * force;
+            bullet.GetComponent<Rigidbody2D>().velocity = player.transform.position * force;
             bullet.GetComponent<EnemyProjectile>().damage = Random.Range(minDamage, maxDamage);
-            StartCoroutine(ShootPlayer());
-        }
+            wait += Time.time;
+      }
     }
 }
+
+
+
+
+//Vector2 myPos = transform.position;
+//Vector2 targetPos = player.transform.position;
+//Vector2 direction = (targetPos - myPos).normalized;
+//bullet.GetComponent<Rigidbody2D>().velocity = direction * force;
+//bullet.GetComponent<EnemyProjectile>().damage = Random.Range(minDamage, maxDamage);
+//wait = 5f;
+//Destroy(projectile, 4f);

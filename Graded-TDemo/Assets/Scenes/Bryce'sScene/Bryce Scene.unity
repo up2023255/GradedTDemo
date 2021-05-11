@@ -138,17 +138,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Summoner
       objectReference: {fileID: 0}
+    - target: {fileID: 5743083489473105091, guid: 14994672add2e114c911f4f3cdbb349b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5743083489473105095, guid: 14994672add2e114c911f4f3cdbb349b, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743083489473105095, guid: 14994672add2e114c911f4f3cdbb349b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.9889193
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5743083489473105095, guid: 14994672add2e114c911f4f3cdbb349b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.94054055
+      value: 3.94
       objectReference: {fileID: 0}
     - target: {fileID: 5743083489473105095, guid: 14994672add2e114c911f4f3cdbb349b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -225,11 +229,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5731966496675133940, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.77
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 5731966496675133940, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5731966496675133940, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -291,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &885905876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637371942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.93, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -460,15 +464,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003874373768227444, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.124054
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 8003874373768227444, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56216216
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: 8003874373768227444, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8003874373768227444, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
       propertyPath: m_LocalRotation.w
@@ -501,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 8003874373768227448, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
       propertyPath: m_Name
       value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003874373768227448, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b708961c0d2aec342950efc6699d8b08, type: 3}
@@ -544,13 +552,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
+      propertyPath: wait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
       propertyPath: force
-      value: 100
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
+      propertyPath: damage
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1628652376}
+    - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 5483176827169510472, guid: 9cda60342f95e65478f1bab35aa009df, type: 3}
     - target: {fileID: 5138461579536115317, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
       propertyPath: damage
       value: 0.83
