@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class CameraController : MonoBehaviour
     bool isZoomedOnSettings;
     bool isZoomedOnHeadLine;
     bool isZoomedOnInterviews;
+    bool isZoomedOnInterviewsList;
 
     GameObject canvas;
 
@@ -41,8 +43,14 @@ public class CameraController : MonoBehaviour
             canvas.transform.position = Vector3.Lerp(canvas.transform.position, Target[3], 0.0125f);
         }
 
+        if (isZoomedOnInterviewsList)
+        {
+            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, 2.5f, 0.0125f);
+            canvas.transform.position = Vector3.Lerp(canvas.transform.position, Target[4], 0.0125f);
+        }
 
-        if (!isZoomedOnSettings && !isZoomedOnHeadLine && !isZoomedOnInterviews)
+
+        if (!isZoomedOnSettings && !isZoomedOnHeadLine && !isZoomedOnInterviews && !isZoomedOnInterviewsList)
         {
             Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, 5, 0.0125f);
             canvas.transform.position = Vector3.Lerp(canvas.transform.position, Target[0], 0.0125f);
@@ -53,6 +61,7 @@ public class CameraController : MonoBehaviour
             isZoomedOnSettings = false;
             isZoomedOnHeadLine = false;
             isZoomedOnInterviews = false;
+            isZoomedOnInterviewsList = false;
         }
     }
     public void SelectSettings()
@@ -67,7 +76,17 @@ public class CameraController : MonoBehaviour
 
     public void SelectInterviews()
     {
-        isZoomedOnInterviews = true;
+        //isZoomedOnInterviews = true;
+
+        if(isZoomedOnInterviews)
+        {
+            isZoomedOnInterviewsList = true;
+            isZoomedOnInterviews = false;
+        }
+        else
+        {
+            isZoomedOnInterviews = true;
+        }
     }
 
     /*void Update()
