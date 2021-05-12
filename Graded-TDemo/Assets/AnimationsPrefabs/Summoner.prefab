@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 5743083489473105092}
   - component: {fileID: 430715306865785430}
   - component: {fileID: 8194544313432282690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Summoner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

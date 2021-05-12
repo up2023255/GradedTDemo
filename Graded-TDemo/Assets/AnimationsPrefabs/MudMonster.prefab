@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 7615237971122961048}
   - component: {fileID: 7615237971122961051}
   - component: {fileID: 1589682488569507985}
-  m_Layer: 0
+  - component: {fileID: 3889169089387247289}
+  - component: {fileID: -2213629226670977687}
+  m_Layer: 8
   m_Name: MudMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,3 +122,45 @@ MonoBehaviour:
   maxDamage: 5
   force: 10
   wait: 2
+--- !u!61 &3889169089387247289
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615237971122961050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.23, y: 6.9200006}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.23, y: 6.9200006}
+  m_EdgeRadius: 0
+--- !u!114 &-2213629226670977687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615237971122961050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59297df675eca04ca7cac546fdea9c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 300
+  healthBar: {fileID: 7461314573097290589, guid: e6a4558d1f1e53d49a5b22b9ae935278, type: 3}
+  healthBarSlider: {fileID: 4910937950882996726, guid: e6a4558d1f1e53d49a5b22b9ae935278, type: 3}
