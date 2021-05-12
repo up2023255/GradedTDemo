@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: b0a8eb693feffad4d88d41278a7c4ec6
+guid: b26dbba17de0bf84b88454bafff8d176
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 739992228434033463
-    second: Player Character Mic Slam_0
+      213: -4413521861334453919
+    second: Player Character Walking (1)_0
   - first:
-      213: 5013778373353594762
-    second: Player Character Mic Slam_1
+      213: 5963802408876008383
+    second: Player Character Walking (1)_1
   - first:
-      213: 5170887350781218887
-    second: Player Character Mic Slam_2
+      213: 8282813315720690616
+    second: Player Character Walking (1)_2
   - first:
-      213: -1176380986623140399
-    second: Player Character Mic Slam_3
+      213: -6300944527804081844
+    second: Player Character Walking (1)_3
   - first:
-      213: 5240794196298993413
-    second: Player Character Mic Slam_4
+      213: -3800963506611877413
+    second: Player Character Walking (1)_4
   - first:
-      213: 4892971190825446086
-    second: Player Character Mic Slam_5
+      213: -3655609157638673739
+    second: Player Character Walking (1)_5
   - first:
-      213: 4021953181303066201
-    second: Player Character Mic Slam_6
+      213: 3285562432683748041
+    second: Player Character Walking (1)_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,148 +124,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Character Mic Slam_0
+      name: Player Character Walking (1)_0
       rect:
         serializedVersion: 2
         x: 475
         y: 2338
         width: 334
         height: 356
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b3c58d20bf44a00800000000000000
-      internalID: 739992228434033463
+      spriteID: 1613dbe304500c2c0800000000000000
+      internalID: -4413521861334453919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_1
+      name: Player Character Walking (1)_1
       rect:
         serializedVersion: 2
         x: 1755
         y: 2338
         width: 334
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 356
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fd64ecdd4849540800000000000000
-      internalID: 5013778373353594762
+      spriteID: fb36cab71bea3c250800000000000000
+      internalID: 5963802408876008383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_2
+      name: Player Character Walking (1)_2
       rect:
         serializedVersion: 2
-        x: 599
+        x: 475
         y: 1618
-        width: 471
-        height: 392
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 334
+        height: 356
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74010e426aea2c740800000000000000
-      internalID: 5170887350781218887
+      spriteID: 8bb386093d672f270800000000000000
+      internalID: 8282813315720690616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_3
+      name: Player Character Walking (1)_3
       rect:
         serializedVersion: 2
-        x: 1879
-        y: 1566
-        width: 571
-        height: 280
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1755
+        y: 1618
+        width: 334
+        height: 356
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ddddc3b9b7acafe0800000000000000
-      internalID: -1176380986623140399
+      spriteID: c49dbc6f55c8e88a0800000000000000
+      internalID: -6300944527804081844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_4
+      name: Player Character Walking (1)_4
       rect:
         serializedVersion: 2
-        x: 599
+        x: 475
         y: 898
-        width: 471
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 334
+        height: 356
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50f845bfd8a0bb840800000000000000
-      internalID: 5240794196298993413
+      spriteID: bd90d2044d3404bc0800000000000000
+      internalID: -3800963506611877413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_5
+      name: Player Character Walking (1)_5
       rect:
         serializedVersion: 2
         x: 1755
         y: 898
         width: 334
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 356
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6caee5dbf5357e340800000000000000
-      internalID: 4892971190825446086
+      spriteID: 5ba2841e6daa44dc0800000000000000
+      internalID: -3655609157638673739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Character Mic Slam_6
+      name: Player Character Walking (1)_6
       rect:
         serializedVersion: 2
-        x: 475
-        y: 178
+        x: 488
+        y: 168
         width: 334
         height: 356
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e42d2fb19d0d730800000000000000
-      internalID: 4021953181303066201
+      spriteID: 9caab77ff99a89d20800000000000000
+      internalID: 3285562432683748041
       vertices: []
       indices: 
       edges: []

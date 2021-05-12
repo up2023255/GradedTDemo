@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 2fa4b840ad9f1944b9d262168544bdd4
+guid: f5eafb0f2adbb6b44bba5a002ea8415e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4500055803761498534
+    second: Player Character Idle (1)_0
+  - first:
+      213: 2510921681009437356
+    second: Player Character Idle (1)_1
+  - first:
+      213: -2394145471090700716
+    second: Player Character Idle (1)_2
+  - first:
+      213: -752222293158379502
+    second: Player Character Idle (1)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Player Character Idle (1)_0
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 898
+        width: 335
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a566c5bb6179c81c0800000000000000
+      internalID: -4500055803761498534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Character Idle (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 898
+        width: 335
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caae46727f598d220800000000000000
+      internalID: 2510921681009437356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Character Idle (1)_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 178
+        width: 335
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e4707f06946ced0800000000000000
+      internalID: -2394145471090700716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Character Idle (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 178
+        width: 335
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2104a205fc19f85f0800000000000000
+      internalID: -752222293158379502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
