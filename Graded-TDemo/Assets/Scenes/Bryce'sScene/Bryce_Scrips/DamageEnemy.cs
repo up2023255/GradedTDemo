@@ -16,6 +16,7 @@ public class DamageEnemy : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        healthBarSlider.value = health;
     }
 
     public void DealDamage(float damage)
