@@ -1,4 +1,5 @@
 //using System;
+using System.Collections;
 using UnityEngine;
 
 
@@ -34,17 +35,19 @@ public class PlayerCombat : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Attack();
+            StartCoroutine(Attack());
         }
     }
 
-    private void Attack()
+     IEnumerator Attack()
     {
-     //Play attack animation
+        yield return new WaitForSeconds(1f);
+
+        //Play attack animation
         animator.SetTrigger("Attack");
      
-     //Detect enemies in a range of attack
-        Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers, enemyLayers);
+       //Detect enemies in a range of attack
+        Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers);
 
         //Deal Damage
         foreach (Collider2D enemy in enemyHit)
@@ -52,6 +55,21 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
         }
     }
+
+    //private void Attack()
+    //{
+    // //Play attack animation
+    //    animator.SetTrigger("Attack");
+     
+    // //Detect enemies in a range of attack
+    //    Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers, enemyLayers);
+
+    //    //Deal Damage
+    //    foreach (Collider2D enemy in enemyHit)
+    //    {
+    //        enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
+    //    }
+    //}
 
     private void ShootAttack()
     {

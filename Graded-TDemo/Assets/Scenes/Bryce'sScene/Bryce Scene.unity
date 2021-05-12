@@ -197,6 +197,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 585044233, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 585044234, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4651736188958361611, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
@@ -229,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5731966496675133940, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.77
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 5731966496675133940, guid: 1352944ba49b8dd489a7d0113c09157b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -559,6 +563,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1628652376}
+    - target: {fileID: 3217170171877681283, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 821025976280128475, guid: 9cda60342f95e65478f1bab35aa009df, type: 3}
     - target: {fileID: 5138461579536115317, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
       propertyPath: damage
       value: 0.83
@@ -627,5 +635,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 5731966496675133942, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25a19392c40b8064d8ef10640401fcc7, type: 3}
