@@ -10,9 +10,21 @@ public class Dialog : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    private GameObject playerIcon;
+    private GameObject enemyIcon;
+    private GameObject playerBox;
+    private GameObject enemyBox;
+
     void Start()
     {
+        playerIcon = GameObject.Find("PlayerIcon");
+        enemyIcon = GameObject.Find("EnemyIcon");
+        playerBox = GameObject.Find("PlayerBox");
+        enemyBox = GameObject.Find("EnemyBox");
+
         StartCoroutine(Type());
+        enemyIcon.SetActive(false);
+        enemyBox.SetActive(false);
     }
     IEnumerator Type()
     {
@@ -34,6 +46,21 @@ public class Dialog : MonoBehaviour
         else
         {
             textDisplay.text = "";
+        }
+
+        if(playerIcon.activeSelf)
+        {
+            playerIcon.SetActive(false);
+            enemyIcon.SetActive(true);
+            playerBox.SetActive(false);
+            enemyBox.SetActive(true);
+        }
+        else
+        {
+            playerIcon.SetActive(true);
+            enemyIcon.SetActive(false);
+            playerBox.SetActive(true);
+            enemyBox.SetActive(false);
         }
     }
     
