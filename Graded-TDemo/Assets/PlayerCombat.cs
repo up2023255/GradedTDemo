@@ -35,19 +35,32 @@ public class PlayerCombat : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            StartCoroutine(Attack());
+            //StartCoroutine(Attack());
+            Attack();
         }
     }
 
-     IEnumerator Attack()
-    {
-        yield return new WaitForSeconds(1f);
+    // IEnumerator Attack()
+    //{
+    //    yield return new WaitForSeconds(1f);
 
+    //    //Play attack animation
+    //    animator.SetTrigger("Attack");
+
+    //   //Detect enemies in a range of attack
+    //    Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers);
+
+    //   //Deal Damage
+    //    GetComponent<DamageEnemy>().DealDamage(attackDMG);
+    //}
+
+    private void Attack()
+    {
         //Play attack animation
         animator.SetTrigger("Attack");
-     
-       //Detect enemies in a range of attack
-        Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers);
+
+        //Detect enemies in a range of attack
+        Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         //Deal Damage
         foreach (Collider2D enemy in enemyHit)
@@ -55,21 +68,6 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
         }
     }
-
-    //private void Attack()
-    //{
-    // //Play attack animation
-    //    animator.SetTrigger("Attack");
-     
-    // //Detect enemies in a range of attack
-    //    Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, enemyLayers, enemyLayers);
-
-    //    //Deal Damage
-    //    foreach (Collider2D enemy in enemyHit)
-    //    {
-    //        enemy.GetComponent<DamageEnemy>().DealDamage(attackDMG);
-    //    }
-    //}
 
     private void ShootAttack()
     {
