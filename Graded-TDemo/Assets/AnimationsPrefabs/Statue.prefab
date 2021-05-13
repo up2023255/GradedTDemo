@@ -231,10 +231,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 2199871890960685240, guid: 43f018e101d362543b0f6b84aed6ead2, type: 3}
-  minDamage: 2
-  maxDamage: 5
+  minDamage: 5
+  maxDamage: 10
   force: 10
   wait: 2
+  collider: {fileID: 0}
 --- !u!114 &3683699875317026763
 MonoBehaviour:
   m_ObjectHideFlags: 0

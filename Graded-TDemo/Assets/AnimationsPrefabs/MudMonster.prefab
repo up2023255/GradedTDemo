@@ -201,10 +201,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 2038071916482891976, guid: 844551f1d9a97d54f9bc164f66e0e27c, type: 3}
-  minDamage: 2
-  maxDamage: 5
+  minDamage: 5
+  maxDamage: 10
   force: 10
   wait: 2
+  collider: {fileID: 0}
 --- !u!61 &3889169089387247289
 BoxCollider2D:
   m_ObjectHideFlags: 0

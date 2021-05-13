@@ -36,7 +36,8 @@ public class PlayerCombat : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             //StartCoroutine(Attack());
-            Attack();
+            //Attack();
+            animator.SetTrigger("Attack");
         }
     }
 
@@ -54,10 +55,10 @@ public class PlayerCombat : MonoBehaviour
     //    GetComponent<DamageEnemy>().DealDamage(attackDMG);
     //}
 
-    private void Attack()
+    public void Attack()
     {
         //Play attack animation
-        animator.SetTrigger("Attack");
+        //animator.SetTrigger("Attack");
 
         //Detect enemies in a range of attack
         Collider2D[] enemyHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

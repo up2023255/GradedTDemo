@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &207148609127692902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5631748808550311400}
+  m_Layer: 8
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5631748808550311400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207148609127692902}
+  m_LocalRotation: {x: -0, y: -0, z: 0.013299008, w: 0.9999116}
+  m_LocalPosition: {x: 3.14, y: -0.2, z: -972.26715}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5285028306230733174}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2157381510457737665
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +282,7 @@ Transform:
   m_Children:
   - {fileID: 7330873162650061791}
   - {fileID: 303740629269785474}
+  - {fileID: 5631748808550311400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -356,6 +387,12 @@ MonoBehaviour:
   MoveSpeed: 1
   MaxDist: 2
   MinDist: 2
+  attackDMG: 30
+  attackPoint: {fileID: 5631748808550311400}
+  attackRange: 1
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!61 &-8516806348826499229
 BoxCollider2D:
   m_ObjectHideFlags: 0

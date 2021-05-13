@@ -13,6 +13,12 @@ public class SkeletonAI : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
 
+    //Attack variables
+    public int attackDMG;
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask playerLayers;
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +56,15 @@ public class SkeletonAI : MonoBehaviour
                 anim.SetBool("canAttack", true);
                 anim.SetBool("moving", false);
             }
+        }
+    }
+
+    public void Attack()
+    {
+        Collider2D[] playerHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        foreach (Collider2D player in playerHit)
+        {
+            player.GetComponent<Player>().TakeDamage(attackDMG);
         }
     }
 }

@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour {
     private Vector2 StartPos;
     private Vector2 RoamPos;
     private Vector2 movement;
-    private State state;
+    //private State state;
     private Rigidbody2D rb;
 
     public static Vector2 RanDirection()
@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour {
     //}
     private void Awake()
     {
-        state = State.Roam;
+        //state = State.Roam;
     }
 
     private void Update()

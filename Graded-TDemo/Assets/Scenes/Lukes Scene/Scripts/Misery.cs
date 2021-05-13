@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,12 @@ public class Misery : MonoBehaviour
     public int MoveSpeed = 10;
     public int MaxDist = 1;
     public int MinDist = 1;
+
+    //Attack variables
+    public int attackDMG;
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask playerLayers;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -49,6 +56,15 @@ public class Misery : MonoBehaviour
                 StartCoroutine("Slam");
                 anim.SetBool("moving", false);
             }
+        }
+    }
+
+    public void Attack()
+    {
+        Collider2D[] playerHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        foreach (Collider2D player in playerHit)
+        {
+            player.GetComponent<Player>().TakeDamage(attackDMG);
         }
     }
 
